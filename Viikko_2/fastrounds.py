@@ -1,15 +1,6 @@
 def count_rounds(numbers):
-    def skibidi(arr, x):
-        min = 0;
-        max = len(arr) - 1;
-
-        while min <= max:
-            mid = min + (max - min) // 2;
-            print(mid);
-
-            min +=1;
-
-    skibidi(numbers, 1)
+    mi = min(numbers);
+    ma = max(numbers);
 
 if __name__ == "__main__":
     # print(count_rounds([1, 2, 3, 4])) # 1
