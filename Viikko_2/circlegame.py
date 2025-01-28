@@ -16,3 +16,18 @@ if __name__ == "__main__":
 
     order = find_order(10**5)
     print(order[-5:]) # [52545, 85313, 36161, 3393, 68929]
+
+    # def find_order(n):
+    # players = list(range(1, n+1))
+
+    # removed = []
+    # remove_next = False
+
+    # for player in players:
+    #     if remove_next:
+    #         removed.append(player)
+    #     else:
+    #         players.append(player)
+    #     remove_next = not remove_next
+
+    # return removed
