@@ -1,12 +1,17 @@
 def count_sublists(numbers):
+    count = 1; # lasketaan heti ensimmäinen nro
     l = len(numbers);
-    amount = 0;
-    counter = 0;
-    prev = -1;
-    for i in range(0, l):
-        this = numbers[i];
-        if(this > prev):
-            counter += 1;
+    streak = 1;
+
+    for i in range(1,l):
+        if(numbers[i] > numbers[i-1]): # ei out of bounds koska count alkaa 1stä
+            streak += 1;
+        else:
+            streak = 1;
+    
+        count += streak;
+        
+    return int(count);
         
 
 if __name__ == "__main__":
